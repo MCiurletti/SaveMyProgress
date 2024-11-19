@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/savemyprogress/static/css/main.8d8f14e7.css",
-    "main.js": "/savemyprogress/static/js/main.d46c2911.js",
-    "static/js/453.98b1ec7b.chunk.js": "/savemyprogress/static/js/453.98b1ec7b.chunk.js",
-    "index.html": "/savemyprogress/index.html",
-    "main.8d8f14e7.css.map": "/savemyprogress/static/css/main.8d8f14e7.css.map",
-    "main.d46c2911.js.map": "/savemyprogress/static/js/main.d46c2911.js.map",
-    "453.98b1ec7b.chunk.js.map": "/savemyprogress/static/js/453.98b1ec7b.chunk.js.map"
+    "main.css": "/SaveMyProgress/static/css/main.8d8f14e7.css",
+    "main.js": "/SaveMyProgress/static/js/main.e6b70d54.js",
+    "static/js/453.6eea746a.chunk.js": "/SaveMyProgress/static/js/453.6eea746a.chunk.js",
+    "index.html": "/SaveMyProgress/index.html",
+    "main.8d8f14e7.css.map": "/SaveMyProgress/static/css/main.8d8f14e7.css.map",
+    "main.e6b70d54.js.map": "/SaveMyProgress/static/js/main.e6b70d54.js.map",
+    "453.6eea746a.chunk.js.map": "/SaveMyProgress/static/js/453.6eea746a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8d8f14e7.css",
-    "static/js/main.d46c2911.js"
+    "static/js/main.e6b70d54.js"
   ]
 }
