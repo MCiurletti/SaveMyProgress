@@ -18,7 +18,7 @@
 
 3. **Manage Your Workout**
 
-   - **Edit**: Update any field by clicking on it and typing.
+   - **Edit**: Update any field at any time by clicking on it and typing.
    - **Remove**: Use the **Remove Section** and **Remove Exercise** buttons to delete items.
 
 4. **Export Your Workout**
@@ -26,7 +26,3 @@
    - Click the **Export to JSON** button at the bottom.
    - In the popup, enter a filename or use the suggested one.
    - Click **Download** to save your workout data as a JSON file.
-
-5. **Toggle Theme**
-
-   - Use the theme toggle button in the top-right corner to switch between light and dark modes.
