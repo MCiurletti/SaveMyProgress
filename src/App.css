@@ -1,3 +1,69 @@
+/* Define default (light theme) variables */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --border-color: #ced4da;
+  --hover-color: #e2e6ea;
+}
+
+/* Dark theme variables */
+[data-theme='dark'] {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --primary-color: #0d6efd;
+  --secondary-color: #adb5bd;
+  --border-color: #495057;
+  --hover-color: #343a40;
+}
+
+body,
+.app-container,
+button,
+input,
+textarea,
+.section,
+.exercise {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Apply variables to elements */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.app-container {
+  /* Ensure the container adapts to theme */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Header Container Styles */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header-container h1 {
+  margin: 0;
+}
+
+input,
+textarea {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--secondary-color);
+}
+
 .App {
   text-align: center;
 }
@@ -63,13 +129,13 @@
 
 /* New styles for sections and exercises */
 .section {
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   padding: 15px;
   margin-top: 20px;
 }
 
 .exercise {
-  border: 1px dashed #999;
+  border: 1px solid var(--border-color);
   padding: 10px;
   margin-top: 15px;
 }
@@ -90,8 +156,8 @@ button {
   font-size: 16px;
   cursor: pointer;
   margin-top: 10px;
-  background-color: #007bff; /* Blue background */
-  color: #fff; /* White text */
+  background-color: var(--primary-color);
+  color: var(--text-color);
   border: none;
   border-radius: 4px;
   display: inline-flex;
@@ -99,12 +165,12 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: var(--hover-color);
 }
 
 button:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+  box-shadow: 0 0 0 2px var(--border-color);
 }
 
 /* Specific styles for the remove section button */
@@ -160,7 +226,7 @@ button .svg-inline--fa {
 
 /* Modal content */
 .modal {
-  background-color: #fff;
+  background-color: var(--background-color);
   padding: 20px;
   border-radius: 8px;
   max-width: 90%;
@@ -197,14 +263,14 @@ button .svg-inline--fa {
   padding: 10px 15px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #007bff; /* Blue background */
-  color: #fff; /* White text */
+  background-color: var(--primary-color);
+  color: var(--text-color);
   border: none;
   border-radius: 4px;
 }
 
 .modal-buttons button:hover {
-  background-color: #0056b3;
+  background-color: var(--hover-color);
 }
 
 /* Cancel button style */
@@ -214,4 +280,18 @@ button .svg-inline--fa {
 
 .modal-buttons button:nth-child(2):hover {
   background-color: #5a6268;
+}
+
+/* Position the theme toggle button */
+.theme-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+/* Optional: Hover effect */
+.theme-toggle-button:hover {
+  color: var(--primary-color);
 }
