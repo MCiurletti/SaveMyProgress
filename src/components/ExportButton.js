@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileExport } from '@fortawesome/free-solid-svg-icons';
 
 const ExportButton = ({ formData }) => {
   const exportJSON = () => {
@@ -17,7 +19,9 @@ const ExportButton = ({ formData }) => {
   };
 
   return (
-    <button onClick={exportJSON}>Export to JSON</button>
+    <button onClick={exportJSON}>
+      <FontAwesomeIcon icon={faFileExport} /> Export to JSON
+    </button>
   );
 };
 
