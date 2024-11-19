@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# SaveMyProgress
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**SaveMyProgress** is a simple and flexible web application for tracking your workouts and training sessions and exporting the data as JSON for further usage.
 
-## Available Scripts
+[**Live Demo**](https://mciurletti.github.io/savemyprogress)
 
-In the project directory, you can run:
+## Usage
 
-### `npm start`
+1. **Visit the Live Site**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   Open the app in your browser: [https://mciurletti.github.io/savemyprogress](https://your-github-username.github.io/savemyprogress)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Add Workout Details**
 
-### `npm test`
+   - **Global Information**: Enter the workout name, date, goal, and any general notes at the top.
+   - **Sections**: Click **Add Section** to create different parts of your workout (e.g., Warm-up, Main Set).
+   - **Exercises**: Within each section, click **Add Exercise** to add exercises. Fill in the exercise name and add additional fields like reps, sets, and weight.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Manage Your Workout**
 
-### `npm run build`
+   - **Edit**: Update any field by clicking on it and typing.
+   - **Remove**: Use the **Remove Section** and **Remove Exercise** buttons to delete items.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Export Your Workout**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - Click the **Export to JSON** button at the bottom.
+   - In the popup, enter a filename or use the suggested one.
+   - Click **Download** to save your workout data as a JSON file.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **Toggle Theme**
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   - Use the theme toggle button in the top-right corner to switch between light and dark modes.
