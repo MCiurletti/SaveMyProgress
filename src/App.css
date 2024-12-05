@@ -28,6 +28,13 @@ textarea,
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
+/* Ensure all input and textarea elements have at least 16px font size */
+input,
+textarea {
+  font-size: 16px;
+  /* Other existing styles */
+}
+
 /* Apply variables to elements */
 body {
   background-color: var(--background-color);
