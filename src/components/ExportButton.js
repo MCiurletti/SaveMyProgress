@@ -40,7 +40,7 @@ const ExportButton = ({ formData }) => {
 
   return (
     <>
-      <button onClick={() => setIsModalOpen(true)}>
+      <button className="export-button" onClick={() => setIsModalOpen(true)}>
         {/* Your button content, e.g., icon and text */}
         Export to JSON
       </button>

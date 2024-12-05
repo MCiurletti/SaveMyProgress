@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import GlobalFields from './components/GlobalFields';
 import ExportButton from './components/ExportButton';
+import ImportButton from './components/ImportButton';
 import Section from './components/Section'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
@@ -84,10 +85,14 @@ function App() {
 
       {/* Buttons Container */}
       <div className="buttons-container">
+        
         <button onClick={addSection}>
           <FontAwesomeIcon icon={faPlus} /> Add Section
         </button>
-        <ExportButton formData={formData} />
+        <div className="json-buttons-container">
+          <ExportButton formData={formData} />
+          <ImportButton setFormData={setFormData} />
+        </div>
       </div>
     </div>
   );
