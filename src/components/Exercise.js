@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faTimes, faPlus } from '@fortawesome/free-solid-svg-icons';
 
-const Exercise = ({ exerciseData, sectionId, formData, setFormData }) => {
+const Exercise = ({ exerciseData, sectionId, formData, setFormData, exerciseIndex }) => {
   const { id, name, customFields = [] } = exerciseData;
   const [newFieldName, setNewFieldName] = useState('');
 
@@ -65,7 +65,7 @@ const Exercise = ({ exerciseData, sectionId, formData, setFormData }) => {
 
   return (
     <div className="exercise">
-      <h4>Exercise</h4>
+      <h4>Exercise {exerciseIndex + 1}</h4>
       <label>
         Exercise Name:
         <input

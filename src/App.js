@@ -74,12 +74,13 @@ function App() {
       <GlobalFields formData={formData} setFormData={setFormData} />
 
       {/* Render Sections */}
-      {formData.sections.map((section) => (
+      {formData.sections.map((section, index) => (
         <Section
           key={section.id}
           sectionData={section}
           setFormData={setFormData}
           formData={formData}
+          sectionIndex={index}
         />
       ))}
 

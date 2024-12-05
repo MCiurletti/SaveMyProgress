@@ -3,7 +3,7 @@ import Exercise from './Exercise';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
 
-const Section = ({ sectionData, formData, setFormData }) => {
+const Section = ({ sectionData, formData, setFormData, sectionIndex }) => {
   const { id, name, notes, exercises } = sectionData;
 
   // Handle changes in section name and notes
@@ -47,7 +47,7 @@ const Section = ({ sectionData, formData, setFormData }) => {
 
   return (
     <div className="section">
-      <h3>Section</h3>
+      <h3>Section {sectionIndex + 1}</h3>
       <label>
         Section Name:
         <input
@@ -69,13 +69,14 @@ const Section = ({ sectionData, formData, setFormData }) => {
       <br />
 
       {/* Render Exercises */}
-      {exercises.map((exercise) => (
+      {exercises.map((exercise, index) => (
         <Exercise
           key={exercise.id}
           exerciseData={exercise}
           sectionId={id}
           formData={formData}
           setFormData={setFormData}
+          exerciseIndex={index}
         />
       ))}
 
