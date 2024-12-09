@@ -11,9 +11,9 @@ function App() {
   const [formData, setFormData] = useState({
     name: '',
     date: '',
-    goal: '',
     notes: '',
-    sections: [], // Add sections array
+    sections: [],
+    customFields: [],
   });
 
   // Theme state: 'light' or 'dark'
@@ -87,7 +87,7 @@ function App() {
       {/* Buttons Container */}
       <div className="buttons-container">
         
-        <button onClick={addSection}>
+        <button onClick={addSection} className="icon-text-button">
           <FontAwesomeIcon icon={faPlus} /> Add Section
         </button>
         <div className="json-buttons-container">

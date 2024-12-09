@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileImport } from '@fortawesome/free-solid-svg-icons';
 
 const isValidData = (data) => {
     // Basic validation checks
@@ -34,8 +36,8 @@ const ImportButton = ({ setFormData }) => {
   };
 
   return (
-    <label htmlFor="import-json" className="import-button">
-      Import JSON
+    <label htmlFor="import-json" className="import-button icon-text-button">
+      <FontAwesomeIcon icon={faFileImport} /> Import
       <input
         type="file"
         id="import-json"

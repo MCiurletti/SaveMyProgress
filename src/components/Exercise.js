@@ -82,7 +82,7 @@ const Exercise = ({ exerciseData, sectionId, formData, setFormData, exerciseInde
             Add field:
             <input
             type="text"
-            placeholder="e.g. Reps"
+            placeholder="Name"
             value={newFieldName}
             onChange={(e) => setNewFieldName(e.target.value)}
             />
@@ -110,7 +110,7 @@ const Exercise = ({ exerciseData, sectionId, formData, setFormData, exerciseInde
       ))}
 
       {/* Button to remove this exercise */}
-      <button onClick={removeExercise} className="remove-exercise-button">
+      <button onClick={removeExercise} className="remove-exercise-button icon-text-button">
         <FontAwesomeIcon icon={faTrash} /> Remove Exercise
       </button>
     </div>

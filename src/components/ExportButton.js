@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileExport } from '@fortawesome/free-solid-svg-icons';
 
 const ExportButton = ({ formData }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -40,9 +42,9 @@ const ExportButton = ({ formData }) => {
 
   return (
     <>
-      <button className="export-button" onClick={() => setIsModalOpen(true)}>
+      <button className="export-button icon-text-button" onClick={() => setIsModalOpen(true)}>
         {/* Your button content, e.g., icon and text */}
-        Export to JSON
+        <FontAwesomeIcon icon={faFileExport} /> Export
       </button>
 
       {isModalOpen && (

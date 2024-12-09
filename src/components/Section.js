@@ -82,10 +82,10 @@ const Section = ({ sectionData, formData, setFormData, sectionIndex }) => {
 
       {/* Buttons Container */}
       <div className="section-buttons-container">
-        <button onClick={addExercise}>
+        <button onClick={addExercise} className="icon-text-button">
           <FontAwesomeIcon icon={faPlus} /> Add Exercise
         </button>
-        <button onClick={removeSection} className="remove-section-button">
+        <button onClick={removeSection} className="remove-section-button icon-text-button">
           <FontAwesomeIcon icon={faTrash} /> Remove Section
         </button>
       </div>

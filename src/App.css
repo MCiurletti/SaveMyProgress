@@ -226,7 +226,7 @@ button:focus {
 }
 
 /* Adjust icon spacing */
-button .svg-inline--fa {
+.icon-text-button .svg-inline--fa {
   margin-right: 8px;
 }
 
